@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a0f26b"
+        android:minHeight="?attr/actionBarSize"
+        app:logo="@drawable/leftarrow"
+        app:titleTextColor="#000"
+        app:title="Register"
+        app:titleMarginStart="29dp"
+        app:titleMarginEnd="25dp"
+        android:theme="?attr/actionBarTheme" />
+</LinearLayout>
