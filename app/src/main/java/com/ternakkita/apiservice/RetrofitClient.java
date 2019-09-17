@@ -9,9 +9,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
+    private static String baseUrl = "http://192.168.1.35/api.ternakkita/";
     private static Retrofit retrofit = null;
 
-    public static Retrofit getClient(String baseUrl){
+    public static Retrofit getClient(){
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient

@@ -1,5 +1,7 @@
 package com.ternakkita.apiservice;
 
+import com.ternakkita.model.UserRespone;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -13,10 +15,18 @@ public interface BaseApiService {
     *   - Anotasi @GET mendefinisikan request GET yang akan di run setelah metode dipanggil
     * */
 
-    // Vendor REST API Client
+    // Customer REST API Client
     @FormUrlEncoded
-    @POST("vendor/vendor-register.php")
-    Call<ResponseBody> registerRequest(@Field("username") String username,
-                                       @Field("password") String password);
+    @POST("customer/customer-login.php")
+    Call<UserRespone> loginRequest(@Field("username") String username,
+                                   @Field("password") String password);
+
+    @FormUrlEncoded
+    @POST("customer/customer-register.php")
+    Call<UserRespone> registerRequest(@Field("username") String username,
+                                      @Field("password") String password);
+
+
+
 
 }

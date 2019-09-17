@@ -13,7 +13,7 @@
         android:background="#76f623"
         android:minHeight="?attr/actionBarSize"
         app:titleTextColor="#000"
-        app:title="Register"
+        app:title="Data Diri"
         app:navigationIcon="?attr/homeAsUpIndicator"
         android:theme="?attr/actionBarTheme" />
 
@@ -79,8 +79,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aftersans"
-                android:layout_marginStart="100dp"
-                android:layout_marginEnd="50dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginEnd="100dp"
                 android:layout_marginTop="15dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
