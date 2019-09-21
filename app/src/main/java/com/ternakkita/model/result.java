@@ -4,7 +4,7 @@ package com.ternakkita.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Result {
+public class result {
 
     @SerializedName("idCustomer")
     @Expose

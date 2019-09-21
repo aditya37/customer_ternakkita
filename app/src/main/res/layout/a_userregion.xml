@@ -17,76 +17,132 @@
         app:navigationIcon="?attr/homeAsUpIndicator"
         android:theme="?attr/actionBarTheme" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/txtAdmin1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/aftersans"
-                android:textSize="15sp"
-                android:layout_marginBottom="3dp"
-                android:text="Username" />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Provinsi" />
 
             <EditText
-                android:id="@+id/etUser"
+                android:id="@+id/etAdmin1"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="40dp"
                 android:ems="10"
                 android:background="@drawable/rounded_border_edittext"
                 android:inputType="textPersonName"
-                android:layout_marginBottom="10dp"
-                android:hint="Username" />
+                android:hint="Provinsi" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/txtAdmin2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/aftersans"
-                android:textSize="15sp"
-                android:layout_marginBottom="3dp"
-                android:text="Username" />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Kabupaten" />
 
             <EditText
-                android:id="@+id/etPass"
+                android:id="@+id/etAdmin2"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="40dp"
                 android:ems="10"
-                android:textSize="12sp"
                 android:background="@drawable/rounded_border_edittext"
-                android:inputType="textPassword"
-                android:layout_marginBottom="15dp"
-                android:hint="Password" />
-
-            <Button
-                android:id="@+id/btnLogin"
-                android:background="@drawable/button_custom"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:textColor="#000"
-                android:layout_marginBottom="10dp"
-                android:text="Selanjutnya" />
+                android:inputType="textPersonName"
+                android:hint="Kabupaten" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
+                android:id="@+id/txtAdmin3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/aftersans"
-                android:layout_marginStart="90dp"
-                android:layout_marginEnd="100dp"
-                android:layout_marginTop="15dp"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="15dp"
-                android:text="Sudah Puya Akun ? Masuk" />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Kecamatan" />
+
+            <EditText
+                android:id="@+id/etAdmin3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:background="@drawable/rounded_border_edittext"
+                android:inputType="textPersonName"
+                android:hint="Kecamatan" />
+
+            <TextView
+                android:id="@+id/txtAdmin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Desa" />
+
+            <EditText
+                android:id="@+id/etAdmin4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:background="@drawable/rounded_border_edittext"
+                android:inputType="textPersonName"
+                android:hint="Desa" />
+
+            <TextView
+                android:id="@+id/txtKodePos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Kode Pos" />
+
+            <EditText
+                android:id="@+id/etPos"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:background="@drawable/rounded_border_edittext"
+                android:inputType="textPostalAddress"
+                android:hint="Kode Pos" />
+            <TextView
+                android:id="@+id/txtAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:background="@drawable/rounded_border_edittext"
+                android:inputType="textPersonName"
+                android:hint="Alamat" />
+
+
+            <Button
+                android:id="@+id/btnRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/button_custom"
+                android:text="Selesai"/>
 
         </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

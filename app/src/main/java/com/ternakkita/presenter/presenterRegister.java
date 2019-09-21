@@ -1,5 +1,7 @@
 package com.ternakkita.presenter;
 
+import android.content.Intent;
+
 import com.ternakkita.apiservice.BaseApiService;
 import com.ternakkita.apiservice.RetrofitClient;
 import com.ternakkita.model.UserRespone;
@@ -15,7 +17,6 @@ public class presenterRegister {
     // Import interface class register
     private interfaceRegister registerview;
 
-
     public presenterRegister(interfaceRegister View) {
         this.registerview = View;
     }
@@ -30,7 +31,7 @@ public class presenterRegister {
                 if(response.isSuccessful()){
                     registerview.hideProgress();
                     if(response.body().getSuccess().equals("1")){
-                        registerview.onAddSuccess(response.body().getMessage());
+                        registerview.onAddSuccess(response.body().getResult().getIdCustomer());
                     }else if(response.body().getSuccess().equals("0")){
                         registerview.onAddError("User Sudah Terdaftar");
                     }

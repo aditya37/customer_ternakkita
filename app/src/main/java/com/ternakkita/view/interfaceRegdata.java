@@ -1,11 +1,11 @@
 package com.ternakkita.view;
 
 // interface User Register handle
-public interface interfaceRegister {
+public interface interfaceRegdata {
 
+    void berhasil();
     void showProgress();
     void hideProgress();
-    void onAddSuccess(String idUser);
-    void onAddError(String message);
+    void errorAdd(String message);
 
 }

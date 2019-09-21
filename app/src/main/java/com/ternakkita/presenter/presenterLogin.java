@@ -4,7 +4,6 @@ import com.ternakkita.apiservice.BaseApiService;
 import com.ternakkita.apiservice.RetrofitClient;
 import com.ternakkita.model.UserRespone;
 import com.ternakkita.view.interfaceLogin;
-import com.ternakkita.view.interfaceRegister;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -33,7 +32,8 @@ public class presenterLogin {
                 if(response.isSuccessful()){
 
                     if (response.body().getSuccess().equals("1")){
-
+                        loginView.loginBerhasil(response.body().getMessage());
+                        loginView.hideProgress();
                     }else{
                         loginView.onLoginError("gagal");
                         loginView.hideProgress();

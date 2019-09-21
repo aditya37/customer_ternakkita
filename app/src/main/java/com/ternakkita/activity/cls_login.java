@@ -59,4 +59,9 @@ public class cls_login extends AppCompatActivity implements interfaceLogin {
     public void onLoginError(String message) {
         Toast.makeText(mContext,message,Toast.LENGTH_LONG).show();
     }
+
+    @Override
+    public void loginBerhasil(String pesan) {
+        Toast.makeText(mContext,pesan,Toast.LENGTH_LONG).show();
+    }
 }

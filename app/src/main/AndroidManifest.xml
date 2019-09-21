@@ -3,6 +3,8 @@
     package="com.ternakkita">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +22,9 @@
         </activity>
         <activity android:name=".activity.cls_login"></activity>
         <activity android:name=".activity.cls_register"></activity>
-
+        <activity android:name=".activity.cls_userdata"></activity>
+        <activity android:name=".activity.cls_userregion"></activity>
+        <activity android:name=".activity.cls_landingPage"></activity>
     </application>
 
 </manifest>

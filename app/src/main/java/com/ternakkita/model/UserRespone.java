@@ -17,7 +17,7 @@ public class UserRespone {
     private String userLevel;
     @SerializedName("result")
     @Expose
-    private Result result = null;
+    private result result = null;
 
     public String getMessage() {
         return message;
@@ -43,11 +43,11 @@ public class UserRespone {
         this.userLevel = userLevel;
     }
 
-    public Result getResult() {
+    public result getResult() {
         return result;
     }
 
-    public void setResult(Result result) {
+    public void setResult(result result) {
         this.result = result;
     }
 }
