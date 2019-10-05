@@ -25,6 +25,7 @@
         <activity android:name=".activity.cls_userdata"></activity>
         <activity android:name=".activity.cls_userregion"></activity>
         <activity android:name=".activity.cls_landingPage"></activity>
+        <activity android:name=".activity.cls_detailProduk"></activity>
     </application>
 
 </manifest>

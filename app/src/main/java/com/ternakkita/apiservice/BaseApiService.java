@@ -1,21 +1,23 @@
 package com.ternakkita.apiservice;
 
+import com.ternakkita.model.detailProduk.DetailProductRespone;
+import com.ternakkita.model.getAllproduct.ProductRespone;
 import com.ternakkita.model.UserRespone;
 
-import java.util.HashMap;
+
 import java.util.Map;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
-import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.PartMap;
+import retrofit2.http.Query;
 
 public interface BaseApiService {
     /*
@@ -54,5 +56,11 @@ public interface BaseApiService {
                                      @Field("alamat") String address,
                                      @Field("postalcode") String kodepos,
                                      @Field("id_login") String id_user);
+
+    @GET("product/product-getall.php")
+    Call<ProductRespone> getallproduct();
+
+    @GET("product/product-getaByid.php")
+    Call <DetailProductRespone> getDetailProduk(@Query("idProduct") String idProduct);
 }
 

@@ -2,6 +2,7 @@ package com.ternakkita.activity;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -62,6 +63,7 @@ public class cls_login extends AppCompatActivity implements interfaceLogin {
 
     @Override
     public void loginBerhasil(String pesan) {
-        Toast.makeText(mContext,pesan,Toast.LENGTH_LONG).show();
+        Intent landingPage = new Intent(cls_login.this,cls_landingPage.class);
+        startActivity(landingPage);
     }
 }

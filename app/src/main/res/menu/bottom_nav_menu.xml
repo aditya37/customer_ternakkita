@@ -8,13 +8,13 @@
         android:title="Home"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_money"
+        android:id="@+id/action_transaction"
         android:enabled="true"
         android:icon="@drawable/ic_shopping_basket_black_24dp"
         android:title="Transaksi"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_star"
+        android:id="@+id/action_setting"
         android:enabled="true"
         android:icon="@drawable/ic_settings_black_24dp"
         android:title="Setting"
