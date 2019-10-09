@@ -3,6 +3,7 @@ package com.ternakkita.apiservice;
 import com.ternakkita.model.detailProduk.DetailProductRespone;
 import com.ternakkita.model.getAllproduct.ProductRespone;
 import com.ternakkita.model.UserRespone;
+import com.ternakkita.model.transaction.TransactionRespone;
 
 
 import java.util.Map;
@@ -62,5 +63,9 @@ public interface BaseApiService {
 
     @GET("product/product-getaByid.php")
     Call <DetailProductRespone> getDetailProduk(@Query("idProduct") String idProduct);
+
+    // Get transaksi berdasarkan id customer atau user
+    @GET("transaction/transaction-getByid.php")
+    Call <TransactionRespone> getTransaction(@Query("idCustomer") String idCustomer);
 }
 

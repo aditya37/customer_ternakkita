@@ -28,7 +28,7 @@ public class cls_userregion extends AppCompatActivity implements interfaceRegreg
     Context mContext;
 
     ProgressDialog loading;
-    EditText etUser;
+    EditText etAdmin1,etAdmin2,etAdmin3,etAdmin4,etAlamat,etPos;
     Button btnSimpan;
 
     @Override
@@ -36,12 +36,16 @@ public class cls_userregion extends AppCompatActivity implements interfaceRegreg
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_userregion);
 
-        mContext =this;
+        mContext   = this;
         presenter  = new presenterRegregion(this);
         spRegister = new spRegister(this);
 
-        etUser = (EditText) findViewById(R.id.etAdmin1);
-        etUser.setText(spRegister.getIdCustomer());
+        etAdmin1 = (EditText) findViewById(R.id.etAdmin1);
+        etAdmin2 = (EditText) findViewById(R.id.etAdmin2);
+        etAdmin3 = (EditText) findViewById(R.id.etAdmin3);
+        etAdmin4 = (EditText) findViewById(R.id.etAdmin4);
+        etAlamat = (EditText) findViewById(R.id.etAlamat);
+        etPos    = (EditText) findViewById(R.id.etPos);
 
         btnSimpan = (Button) findViewById(R.id.btnRegion);
 
@@ -49,12 +53,12 @@ public class cls_userregion extends AppCompatActivity implements interfaceRegreg
             @Override
             public void onClick(View v) {
                 String id = spRegister.getIdCustomer();
-                presenter.regRegion("Jawa Timur",
-                        "Bojonegoro",
-                        "Dander",
-                        "Mojoranu",
-                        "Jln KH Subakir",
-                        "621717",
+                presenter.regRegion(etAdmin1.getText().toString(),
+                        etAdmin2.getText().toString(),
+                        etAdmin3.getText().toString(),
+                        etAdmin4.getText().toString(),
+                        etAlamat.getText().toString(),
+                        etPos.getText().toString(),
                          id);
             }
         });

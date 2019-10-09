@@ -32,7 +32,7 @@ public class presenterLogin {
                 if(response.isSuccessful()){
 
                     if (response.body().getSuccess().equals("1")){
-                        loginView.loginBerhasil(response.body().getMessage());
+                        loginView.loginBerhasil(response.body().getMessage(),response.body().getResult().getIdCustomer());
                         loginView.hideProgress();
                     }else{
                         loginView.onLoginError("gagal");

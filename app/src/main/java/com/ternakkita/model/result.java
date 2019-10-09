@@ -12,9 +12,6 @@ public class result {
     @SerializedName("username")
     @Expose
     private String username;
-    @SerializedName("level")
-    @Expose
-    private String level;
 
     public String getIdCustomer() {
         return idCustomer;
@@ -32,11 +29,4 @@ public class result {
         this.username = username;
     }
 
-    public String getLevel() {
-        return level;
-    }
-
-    public void setLevel(String level) {
-        this.level = level;
-    }
 }

@@ -12,9 +12,6 @@ public class UserRespone {
     @SerializedName("success")
     @Expose
     private String success;
-    @SerializedName("userLevel")
-    @Expose
-    private String userLevel;
     @SerializedName("result")
     @Expose
     private result result = null;
@@ -33,14 +30,6 @@ public class UserRespone {
 
     public void setSuccess(String success) {
         this.success = success;
-    }
-
-    public String getUserLevel() {
-        return userLevel;
-    }
-
-    public void setUserLevel(String userLevel) {
-        this.userLevel = userLevel;
     }
 
     public result getResult() {

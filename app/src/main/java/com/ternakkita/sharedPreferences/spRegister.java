@@ -5,6 +5,12 @@ import android.content.SharedPreferences;
 
 public class spRegister {
 
+    /*
+    class ini berfungsi jika user atau customer registrasi
+    jadi class ini berfungsi menampung data id_customer dari restAPI ke sharedPrefences
+
+     */
+
     // key atau variable yang akan menampung data dari activity register
 
     public static final String PREFERENCES_NAME = "register"; // session name jika di pemrograman web

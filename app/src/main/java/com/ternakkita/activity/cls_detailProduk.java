@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,6 +22,9 @@ public class cls_detailProduk extends AppCompatActivity implements interfaceDeta
     Context mContext;
     // Progressbar
     ProgressDialog loading;
+
+    //Toolbar
+    Toolbar mActionBarToolbar;
     // Widget
     TextView txtNameProduct,txtPrice,txtDetBobot,txtDetUsia,txtDetJenisKelamin,txtDetDeskripsi,detNamaVendor,detAlamatVendor;
     ImageView imgProduk,imgProfile;
@@ -32,6 +36,10 @@ public class cls_detailProduk extends AppCompatActivity implements interfaceDeta
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_detailproduk);
+
+        // Toolbar
+        mActionBarToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mActionBarToolbar);
 
         // declare context
         mContext = this;
@@ -70,6 +78,8 @@ public class cls_detailProduk extends AppCompatActivity implements interfaceDeta
             txtDetUsia.setText(detailProduks.get(i).getUmur());
             txtDetJenisKelamin.setText(detailProduks.get(i).getJenisKelamin());
             txtDetDeskripsi.setText(detailProduks.get(i).getDeskripsi());
+
+            getSupportActionBar().setTitle(detailProduks.get(i).getJudulProduk());
 
             Glide.with(mContext)
                     .load(detailProduks.get(i).getThumbnail())

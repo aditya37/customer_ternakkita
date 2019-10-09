@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.view.Window;
 
 import com.ternakkita.R;
+import com.ternakkita.sharedPreferences.spLogin;
 
 public class cls_splashscreen extends AppCompatActivity {
+
+    spLogin spLogin;
 
     private int interval = 4000;
     @Override
@@ -17,11 +20,14 @@ public class cls_splashscreen extends AppCompatActivity {
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.a_splashscreen);
 
+        spLogin = new spLogin(getApplicationContext());
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent login = new Intent(cls_splashscreen.this, cls_login.class);
                 startActivity(login);
+                spLogin.checkLogin();
                 finish();
 
             }
