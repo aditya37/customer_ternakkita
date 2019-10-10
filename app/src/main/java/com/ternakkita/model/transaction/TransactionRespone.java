@@ -15,6 +15,9 @@ public class TransactionRespone {
     @SerializedName("transaksi")
     @Expose
     private List<Transaksi> transaksi = null;
+    @SerializedName("data")
+    @Expose
+    private List<data_user> data = null;
 
     public String getSuccess() {
         return success;
@@ -38,5 +41,13 @@ public class TransactionRespone {
 
     public void setTransaksi(List<Transaksi> transaksi) {
         this.transaksi = transaksi;
+    }
+
+    public List<data_user> getData() {
+        return data;
+    }
+
+    public void setData(List<data_user> data) {
+        this.data = data;
     }
 }

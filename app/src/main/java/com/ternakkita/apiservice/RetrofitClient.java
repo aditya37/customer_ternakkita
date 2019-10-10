@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
 
     //private static String baseUrl = "http://192.168.0.133/api.ternakkita/";
-    private static String baseUrl = "http://192.168.1.4/api.ternakkita/";
+    private static String baseUrl = "http://192.168.1.5/api.ternakkita/";
     private static Retrofit retrofit = null;
 
     public static Retrofit getClient(){
